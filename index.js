@@ -73,7 +73,7 @@ function init() {
         .prompt(questions)
             .then(response => {
                 console.log(response)
-                writeToFile('README.md', response)
+                writeToFile('generatedREADME.md', response)
             })
 
 }
