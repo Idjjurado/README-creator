@@ -72,7 +72,6 @@ function init() {
     inquirer
         .prompt(questions)
             .then(response => {
-                console.log(response)
                 writeToFile('generatedREADME.md', response)
             })
 

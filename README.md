@@ -1,8 +1,6 @@
 # README-creator
 This is node functions that will assist in creating a README!
 
-link:
-
 ## Description
 Node functions that can assist a user in creating a professional and in-depth README for projects/repositories!
 
@@ -10,12 +8,19 @@ Node functions that can assist a user in creating a professional and in-depth RE
 Create an awesome and in-depth README!
 
 ## Installation
+First clone the GH Repo! > Open an integrated terminal inside the repository directory you cloned onto your machine! > Once in the terminal, make sure to install with the command `npm i`
 
 ### How to execute!
+Once packages are installed make sure to run `node index.js` > Answer all prompts! > Your README.md will then be geenrated once done!
+
+![How to excute in console](./imgs/console.png)
+
 
 ### Prompt Examples!
+![Finished console prompts](./imgs/finished.png)
 
 ### Final Creation example!
+![Prompt examples!](./imgs/example.png)
 
 These are the main screenshots of how the node functionality should be presented and used!
 

@@ -1,17 +1,14 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function licenseBadge(license) {
-  return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`; 
+
+function licenseBadge(data) {
+  return `![GitHub license](https://img.shields.io/badge/license-${data.license}-orange.svg)`; 
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function licenseInfo(license) {
-    return `${licenseBadge(license)}
-    [License Info](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)`
+
+function licenseInfo() {    
+    return `[License Info](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)`
 }
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
   
@@ -19,20 +16,20 @@ function generateMarkdown(data) {
   ${data.description}
 
   # Table of Contents
-    - [DESCRIPTION](#Description)
-    
-    - [USAGE](#Usage)
-    
-    - [INSTALLATION](#Installation)
-    
-    - [LICENSE](#License)
-    
-    - [CREDITS/CONTRIBUTING](#Credits/contributors)
-    
-    - [TESTING](#Testing)
-    
-    - [CONTACT/QUESTIONS](#Questions/Concerns/or contact me!)
+  - [DESCRIPTION](#description)
   
+  - [USAGE](#usage)
+  
+  - [INSTALLATION](#installation)
+  
+  - [LICENSE](#license)
+  
+  - [CREDITS/CONTRIBUTING](#contributing)
+  
+  - [TESTING](#test)
+  
+  - [CONTACT/QUESTIONS](#contactGH)
+
   ## Usage
   ${data.usage}
 
@@ -40,7 +37,9 @@ function generateMarkdown(data) {
   ${data.installation}
   
   ## License
-  ${licenseInfo(data.License)}
+  ${licenseBadge(data.license)}
+
+  ${licenseInfo()}
   
   ## Credits/contributors:
   ${data.contributing}
@@ -49,7 +48,8 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Questions/Concerns/or contact me!
-  GitHub Profile: [${data.contactGH}](https://www.github.com/${data.contactGH}
+  GitHub Profile: [${data.contactGH}](https://www.github.com/${data.contactGH})
+ 
   Email: ${data.email}
 
 
